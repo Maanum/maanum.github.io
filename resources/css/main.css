@@ -1,0 +1,42 @@
+body {
+  background: #0C4671;
+  font-family: Lato;
+}
+
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 72px;
+  line-height: 86px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.white-text {
+  color: #FFFFFF;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#home-left-column {
+  float: left;
+  width: 300px;
+  margin: 40px;
+}
+
+#home-right-column {
+  float: left;
+  /* width: 300px; */
+}
