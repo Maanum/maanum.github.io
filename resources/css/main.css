@@ -1,5 +1,4 @@
 body {
-  background: #0C4671;
   font-family: Lato;
 }
 
@@ -20,8 +19,14 @@ h2 {
   margin-bottom: 10px;
 }
 
-.white-text {
-  color: #FFFFFF;
+.dark-mode {
+  background: #0c4671;
+  color: #ffffff;
+}
+
+.light-mode {
+  background: #ffffff;
+  color: #000000;
 }
 
 .row:after {
@@ -39,4 +44,19 @@ h2 {
 #home-right-column {
   float: left;
   /* width: 300px; */
+}
+
+#content {
+  margin: auto;
+  max-width: 1200px;
+}
+
+#projects-list {
+  /* min-width: 600px; */
+  padding: 10px;
+  background: darkgoldenrod;
+}
+
+#project-card {
+  min-width: 300px;
 }
