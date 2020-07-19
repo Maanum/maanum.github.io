@@ -24,6 +24,9 @@ img {
   display: block;
 }
 
+a {
+  color: var(--text-white-color);
+}
 h1 {
   font-size: 3rem;
   margin-top: 0;
@@ -44,8 +47,16 @@ h6 {
   font-size: 0.75rem;
 }
 
+#home-main {
+  min-width: 20em;
+}
+
 #home-left-column {
   padding: 0 2em 0 2em;
+}
+
+#bio {
+  text-align: justify;
 }
 
 #home-right-column {
@@ -74,16 +85,37 @@ h6 {
 }
 .card-roles {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.role-label {
+  border-radius: 0.8em;
+  background: lightgray;
+  font-size: 0.7rem;
+  color: var(--text-dark-lighter-color);
+  padding: 0.5em 0.7em 0.5em 0.7em;
+  margin: 0.2em 0.5em 0.2em 0em;
+}
+
+.label-pm {
+  background: #80b3ff;
+}
+.label-pd {
+  background: #ff8080;
+}
+.label-dev {
+  background: #66cc00;
 }
 
 .card-logos {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tool-icon {
   height: 2.5em;
   width: 2.5em;
-  margin-right: 0.4em;
+  margin: 0.2em 0.4em 0em 0em;
   border-radius: 50%;
 }
 
