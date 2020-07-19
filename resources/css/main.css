@@ -1,8 +1,23 @@
+:root {
+  --main-bg-color: #0C4671;
+  --text-white-color: #FFF;
+  --text-dark-color: #292929;
+  --text-dark-lighter-color: #686868;
+}
+
 html {
   font-size: 100%;
   box-sizing: border-box;
-  background: #0C4671;
+  background: var(--main-bg-color);
   font-family: Lato;
+  color: var(--text-white-color);
+  padding: 2em;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 img {
@@ -10,73 +25,54 @@ img {
 }
 
 h1 {
-  background: blue;
   font-size: 3rem;
   margin-top: 0;
-  /* font-style: normal;
-  font-weight: bold;
-  font-size: 72px;
-  line-height: 86px;
-  margin-bottom: 10px; */
 }
 
 h2 {
   font-size: 2rem;
   margin-top: 0;
-  /* font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  margin-top: 20px;
-  margin-bottom: 10px; */
 }
 
-h3 { font-size: 1.17rem; }
+h3 { font-size: 1.5rem; }
 h5 { font-size: .83rem; }
 h6 { font-size: .75rem; }
 
-.white-text {
-  color: #FFFFFF;
-}
-
-
-#home-main {
-  background: yellow;
-  /* max-width: 1400px; */
-  margin: 2em;
-}
-
 #home-left-column {
   padding: 0 2em 0 2em;
-  background: gray;
 }
 
 #home-right-column {
-  background: green;
   padding: 0 2em 0 2em;
 }
 
 #projects-list {
-  background: #FFFFFF;
-  color: #000000;
-  display: flex;
-  flex-wrap: wrap;
+  column-gap: 1.5em;
 }
 
 .project-card {
-  width: 100%;
-  /* flex: 1 0 auto; */
-  background: purple;
+  color: var(--text-dark-color);
+  background: #fff;
   padding: 1em;
+  margin: 0 0 1.5em;
+  border-radius: .25em;
+}
+
+.project-card-name {
+  margin: .1em 0 .1em 0;
+}
+.project-card-desc {
+  margin: .1em 0 .1em 0;
+  color: var(--text-dark-lighter-color);
+  font-style: italic;
 }
 
 @media only screen and (min-width: 65rem) {
   html {
-    background: dodgerblue;
+    padding: 2em;
   }
   #home-main {
     display: flex;
-    flex-wrap: nowrap;
-    background: yellow;
     max-width: 80rem;
     margin: auto;
   }
@@ -88,14 +84,7 @@ h6 { font-size: .75rem; }
     flex: 3 0px;
   }
 
-  .project-card {
-    box-sizing: border-box;
-    width: auto;
-    max-width: 100%;
-    flex: 1 0 auto;
-    border-style: solid;
-    /* max-width: 20em; */
-    /* min-height: 10em; */
-    /* max-height: 20em; */
+  #projects-list {
+    column-count: 2;
   }
 }
