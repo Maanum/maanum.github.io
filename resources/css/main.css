@@ -1,6 +1,6 @@
 :root {
-  --main-bg-color: #0C4671;
-  --text-white-color: #FFF;
+  --main-bg-color: #0c4671;
+  --text-white-color: #fff;
   --text-dark-color: #292929;
   --text-dark-lighter-color: #686868;
 }
@@ -34,9 +34,15 @@ h2 {
   margin-top: 0;
 }
 
-h3 { font-size: 1.5rem; }
-h5 { font-size: .83rem; }
-h6 { font-size: .75rem; }
+h3 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 0.83rem;
+}
+h6 {
+  font-size: 0.75rem;
+}
 
 #home-left-column {
   padding: 0 2em 0 2em;
@@ -55,17 +61,30 @@ h6 { font-size: .75rem; }
   background: #fff;
   padding: 1em;
   margin: 0 0 1.5em;
-  border-radius: .25em;
+  border-radius: 0.25em;
   break-inside: avoid;
 }
 
-.project-card-name {
-  margin: .1em 0 .1em 0;
+.card-item {
+  margin: 0.25em 0 0.25em 0;
 }
-.project-card-desc {
-  margin: .1em 0 .1em 0;
+.card-desc {
   color: var(--text-dark-lighter-color);
   font-style: italic;
+}
+.card-roles {
+  display: flex;
+}
+
+.card-logos {
+  display: flex;
+}
+
+.tool-icon {
+  height: 2.5em;
+  width: 2.5em;
+  margin-right: 0.4em;
+  border-radius: 50%;
 }
 
 @media only screen and (min-width: 65rem) {
