@@ -36,14 +36,8 @@ h6 { font-size: .75rem; }
 
 .white-text {
   color: #FFFFFF;
-
-
-.project {
-  min-width: 10em;
-  max-width: 20em;
-  min-height: 10em;
-  max-height: 20em;
 }
+
 
 #home-main {
   background: yellow;
@@ -68,52 +62,40 @@ h6 { font-size: .75rem; }
   flex-wrap: wrap;
 }
 
+.project-card {
+  width: 100%;
+  /* flex: 1 0 auto; */
+  background: purple;
+  padding: 1em;
+}
 
 @media only screen and (min-width: 65rem) {
+  html {
+    background: dodgerblue;
+  }
   #home-main {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background: yellow;
+    max-width: 80rem;
+    margin: auto;
   }
 
   #home-left-column {
-    max-width: 400px;
-    /* background: gray; */
+    flex: 1 0 0;
   }
-}
+  #home-right-column {
+    flex: 3 0px;
+  }
 
-
-  /* width: 300px; */
-/* .row:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-/* media
-#home-left-column {
-  float: left;
-  width: 300px;
-  margin: 40px;
-}
-
-#home-right-column {
-  float: left;
-  min-width: 300px;
-  /* width: 300px; */
-
-
-#content {
-  margin: auto;
-  max-width: 1200px;
-}
-
-#projects-list {
-  /* min-width: 600px; */
-  padding: 10px;
-  background: darkgoldenrod;
-}
-
-#project-card {
-  min-width: 300px;
+  .project-card {
+    box-sizing: border-box;
+    width: auto;
+    max-width: 100%;
+    flex: 1 0 auto;
+    border-style: solid;
+    /* max-width: 20em; */
+    /* min-height: 10em; */
+    /* max-height: 20em; */
+  }
 }
