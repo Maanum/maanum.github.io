@@ -1,3 +1,135 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+/* ol, ul {
+	list-style: none;
+} */
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom common settings
+*/
+
 :root {
   --main-bg-color: #0c4671;
   --text-white-color: #fff;
@@ -6,18 +138,23 @@
 }
 
 html {
-  font-size: 100%;
   box-sizing: border-box;
   background: var(--main-bg-color);
-  font-family: Lato;
+  font-family: "Lato", Helvetica, sans-serif;
   color: var(--text-white-color);
-  padding: 2em;
+  /* padding: 2em; */
 }
 
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  max-width: 80rem;
+  margin: 0 auto 0 auto;
+  padding: 2em;
 }
 
 img {
@@ -27,19 +164,26 @@ img {
 a {
   color: var(--text-white-color);
 }
+
 h1 {
   font-size: 3rem;
-  margin-top: 0;
+  margin: 00 0 0.5em 0;
 }
 
 h2 {
   font-size: 2rem;
-  margin-top: 0;
+  margin: 0.5em 0 0.4em 0;
 }
 
 h3 {
   font-size: 1.5rem;
 }
+
+h4 {
+  font-size: 1.2rem;
+  margin: 0.4em 0 0.35em 0;
+}
+
 h5 {
   font-size: 0.83rem;
 }
@@ -47,33 +191,30 @@ h6 {
   font-size: 0.75rem;
 }
 
-#home-main {
+p {
+  margin: 0.3em 0 0.3em 0;
+  line-height: 1.1rem;
+}
+
+ul {
+  padding-left: 2em;
+  line-height: 1.3rem;
+}
+
+.main {
   min-width: 20em;
 }
-
-#home-left-column {
-  padding: 0 2em 0 2em;
-}
-
-#bio {
-  text-align: justify;
-}
-
-#home-right-column {
-  padding: 0 2em 0 2em;
-}
-
-#projects-list {
-  column-gap: 1.5em;
-}
-
-.project-card {
+.light-field {
   color: var(--text-dark-color);
   background: #fff;
   padding: 1em;
   margin: 0 0 1.5em;
   border-radius: 0.25em;
   break-inside: avoid;
+}
+
+.project-meta-header {
+  margin: 1rem 0 0.1rem 0;
 }
 
 .card-item {
@@ -119,20 +260,32 @@ h6 {
   border-radius: 50%;
 }
 
+.metadata-section + .metadata-section {
+  margin-top: 1em;
+}
+
+#bio {
+  text-align: justify;
+}
+
+#projects-list {
+  column-gap: 1.5em;
+}
+
+#projects-list a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 65rem) {
-  html {
-    padding: 2em;
-  }
-  #home-main {
+  .main {
     display: flex;
-    max-width: 80rem;
-    margin: auto;
   }
 
-  #home-left-column {
+  .left-column {
+    margin: 0 3em 0 0;
     flex: 1 0 0;
   }
-  #home-right-column {
+  .right-column {
     flex: 3 0px;
   }
 
