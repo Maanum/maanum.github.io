@@ -27,8 +27,8 @@
   </head>
 
   <body>
-    <div id="home-main">
-      <div id="home-left-column">
+    <div class="main">
+      <div class="left-column">
         <h1>Hallo there, I'm Kristofer.</h1>
         <h2>Bio</h2>
         <p id="bio">
@@ -51,42 +51,44 @@
         </ul>
       </div>
 
-      <div id="home-right-column">
+      <div class="right-column">
         <h2>Projects</h2>
         <div id="projects-list">
-          <div class="project-card">
-            <h3 class="card-name card-item">Credit Card Selector</h3>
-            <div class="card-desc card-item">
-              Application that indicates which credit card should be used for
-              specific purchases to optimize reward points.
+          <a href="project-card.html">
+            <div class="project-card light-field">
+              <h3 class="card-name card-item">Credit Card Selector</h3>
+              <div class="card-desc card-item">
+                Application that indicates which credit card should be used for
+                specific purchases to optimize reward points.
+              </div>
+              <div class="card-roles card-item">
+                <pre class="role-label label-pm">Product Manager</pre>
+                <pre class="role-label label-pd">Designer</pre>
+                <pre class="role-label label-dev">Developer</pre>
+              </div>
+              <div class="card-logos card-item">
+                <img
+                  class="tool-icon"
+                  src="resources/images/icon-react.png"
+                  alt="React Icon"
+                  title="React"
+                />
+                <img
+                  class="tool-icon"
+                  src="resources/images/icon-firebase_hosting.svg"
+                  alt="Firebase Hosting Icon"
+                  title="Firebase Hosting"
+                />
+                <img
+                  class="tool-icon"
+                  src="resources/images/icon-firebase_functions.svg"
+                  alt="Cloud Functions for Firebase Icon"
+                  title="Cloud Functions for Firebase"
+                />
+              </div>
             </div>
-            <div class="card-roles card-item">
-              <pre class="role-label label-pm">Product Manager</pre>
-              <pre class="role-label label-pd">Designer</pre>
-              <pre class="role-label label-dev">Developer</pre>
-            </div>
-            <div class="card-logos card-item">
-              <img
-                class="tool-icon"
-                src="resources/images/icon-react.png"
-                alt="React Icon"
-                title="React"
-              />
-              <img
-                class="tool-icon"
-                src="resources/images/icon-firebase_hosting.svg"
-                alt="Firebase Hosting Icon"
-                title="Firebase Hosting"
-              />
-              <img
-                class="tool-icon"
-                src="resources/images/icon-firebase_functions.svg"
-                alt="Cloud Functions for Firebase Icon"
-                title="Cloud Functions for Firebase"
-              />
-            </div>
-          </div>
-          <div class="project-card">
+          </a>
+          <div class="project-card light-field">
             <h3 class="card-name card-item">DataSeer</h3>
             <div class="card-desc card-item">
               A B2B SaaS application that extracts semantic information from
@@ -122,7 +124,7 @@
               />
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card light-field">
             <h3 class="card-name card-item">Whitten Associates Website</h3>
             <div class="card-desc card-item">
               Creation of a website for architectural firm Whitten Associates to
@@ -159,7 +161,7 @@
               />
             </div>
           </div>
-          <div class="project-card">
+          <div class="project-card light-field">
             <h3 class="card-name card-item">Personal Website</h3>
             <div class="card-desc card-item">
               Development of this page to try out HTML/CSS-only website
